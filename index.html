@@ -3,97 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интерактивный сайт</title>
+    <title>Very Funni Site 😂😂😂</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background: #333333;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #333, #444);
             color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            text-align: center;
+            padding: 20px;
         }
 
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            width: 80%;
+        h1 {
+            font-size: 3rem;
+            color: #FF6347;
         }
 
-        button, input[type="checkbox"], input[type="range"], select, textarea {
-            background-color: #444444;
+        p {
+            font-size: 1.5rem;
+            color: #FFEB3B;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 15px;
+            background-color: #FF6347;
             border: none;
-            color: white;
-            padding: 10px;
-            font-size: 1em;
             border-radius: 5px;
+            margin: 10px;
             cursor: pointer;
         }
 
-        button:hover, input[type="checkbox"]:hover, input[type="range"]:hover, select:hover, textarea:hover {
-            background-color: #666666;
+        button:hover {
+            background-color: #FF4500;
         }
 
-        label {
-            margin: 10px 0;
+        .slider {
+            width: 80%;
+            margin-top: 20px;
         }
 
-        input[type="range"] {
-            width: 200px;
-        }
-
-        textarea {
-            width: 200px;
-            height: 100px;
-            resize: none;
+        .memes img {
+            width: 80%;
+            border-radius: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>Welcome to the Very Funni Site 😂😂😂</h1>
+    <p>Dude, those buttons are so funni, I can't stop laughing! 💣💥😂</p>
+    
+    <button onclick="alert('DUDE THIS BUTTON IS SO FUNNI!😂😂😂')">Click me for FUNNI 😂</button>
+    <button onclick="alert('YOU REALLY CLICKED IT 😂😂😂')">Click me again 😂</button>
 
-    <div class="container">
-        <!-- Кнопки -->
-        <button>Кнопка 1</button>
-        <button>Кнопка 2</button>
-        <button>Кнопка 3</button>
+    <p>DUDE SLIDERS ARE SO FUNNI 😂😂😂</p>
+    <input class="slider" type="range" min="1" max="100" value="50" onchange="console.log('Slider at: ' + this.value)" />
 
-        <!-- Чекбоксы -->
-        <label><input type="checkbox"> Чекбокс 1</label>
-        <label><input type="checkbox"> Чекбокс 2</label>
-        <label><input type="checkbox"> Чекбокс 3</label>
-
-        <!-- Слайдеры -->
-        <div>
-            <label for="slider1">Слайдер 1:</label>
-            <input type="range" id="slider1" min="1" max="100" value="50">
-        </div>
-        <div>
-            <label for="slider2">Слайдер 2:</label>
-            <input type="range" id="slider2" min="1" max="100" value="25">
-        </div>
-
-        <!-- Выбор -->
-        <div>
-            <label for="select1">Выберите опцию:</label>
-            <select id="select1">
-                <option value="option1">Опция 1</option>
-                <option value="option2">Опция 2</option>
-                <option value="option3">Опция 3</option>
-            </select>
-        </div>
-
-        <!-- Текстовое поле -->
-        <div>
-            <label for="textarea">Введите текст:</label>
-            <textarea id="textarea"></textarea>
-        </div>
+    <div class="memes">
+        <h2>Check out some memes below! 💥💣😂</h2>
+        <img src="https://i.pinimg.com/originals/f5/d0/ee/f5d0ee8e3fe21be4a196ef5a3a6fc033.jpg" alt="Funni Meme 1" />
+        <img src="https://media1.tenor.com/images/8ec37d80dfd9b68a33ca17094d86f946/tenor.gif" alt="Funni Meme 2" />
+        <img src="https://media.tenor.com/images/ed2e9fd6598c42b2b2b5a4bc7480ecfb/tenor.gif" alt="Funni Meme 3" />
     </div>
 
+    <p>Hope you're enjoying the funni vibes! 😂💥 Don't forget to laugh as hard as possible, or else... you might miss out! 😂😂😂</p>
 </body>
 </html>
