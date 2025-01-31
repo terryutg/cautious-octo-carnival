@@ -11,26 +11,30 @@
             color: white;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             color: #FF6347;
+            text-shadow: 2px 2px 5px rgba(255, 99, 71, 0.6);
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: #FFEB3B;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
         }
 
         button {
-            font-size: 1.2rem;
-            padding: 15px;
+            font-size: 1.5rem;
+            padding: 20px 40px;
             background-color: #FF6347;
             border: none;
-            border-radius: 5px;
-            margin: 10px;
+            border-radius: 10px;
+            margin: 15px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         button:hover {
@@ -38,34 +42,99 @@
         }
 
         .slider {
-            width: 80%;
+            width: 70%;
             margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #888;
+            transition: background-color 0.3s;
+        }
+
+        .slider:active {
+            background-color: #FF6347;
         }
 
         .memes img {
-            width: 80%;
+            width: 100%;
             border-radius: 15px;
             margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .memes img:hover {
+            transform: scale(1.1);
+        }
+
+        .funny-gif {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .funny-gif:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            font-size: 1.2rem;
+            color: #FFEB3B;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.4);
+            margin-top: 50px;
+        }
+
+        .memes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .memes div {
+            width: 30%;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to the Very Funni Site 😂😂😂</h1>
-    <p>Dude, those buttons are so funni, I can't stop laughing! 💣💥😂</p>
+    <p>Dude, these buttons are so funni I can't stop laughing! 💣💥😂</p>
     
-    <button onclick="alert('DUDE THIS BUTTON IS SO FUNNI!😂😂😂')">Click me for FUNNI 😂</button>
-    <button onclick="alert('YOU REALLY CLICKED IT 😂😂😂')">Click me again 😂</button>
-
+    <button onclick="console.log('DUDE THIS BUTTON IS SO FUNNI 😂😂😂')">Click me for FUNNI 😂</button>
+    <button onclick="console.log('YOU REALLY CLICKED IT 😂😂😂')">Click me again 😂</button>
+    
     <p>DUDE SLIDERS ARE SO FUNNI 😂😂😂</p>
     <input class="slider" type="range" min="1" max="100" value="50" onchange="console.log('Slider at: ' + this.value)" />
 
     <div class="memes">
-        <h2>Check out some memes below! 💥💣😂</h2>
-        <img src="https://i.pinimg.com/originals/f5/d0/ee/f5d0ee8e3fe21be4a196ef5a3a6fc033.jpg" alt="Funni Meme 1" />
-        <img src="https://media1.tenor.com/images/8ec37d80dfd9b68a33ca17094d86f946/tenor.gif" alt="Funni Meme 2" />
-        <img src="https://media.tenor.com/images/ed2e9fd6598c42b2b2b5a4bc7480ecfb/tenor.gif" alt="Funni Meme 3" />
+        <div>
+            <img src="https://i.pinimg.com/originals/f5/d0/ee/f5d0ee8e3fe21be4a196ef5a3a6fc033.jpg" alt="Funni Meme 1" />
+        </div>
+        <div>
+            <img src="https://media1.tenor.com/images/8ec37d80dfd9b68a33ca17094d86f946/tenor.gif" alt="Funni Meme 2" />
+        </div>
+        <div>
+            <img src="https://media.tenor.com/images/ed2e9fd6598c42b2b2b5a4bc7480ecfb/tenor.gif" alt="Funni Meme 3" />
+        </div>
     </div>
 
-    <p>Hope you're enjoying the funni vibes! 😂💥 Don't forget to laugh as hard as possible, or else... you might miss out! 😂😂😂</p>
+    <div class="memes">
+        <div>
+            <img src="https://i.pinimg.com/originals/59/ea/25/59ea255ec4e879320ee64bde128f3e98.jpg" alt="Meme 4" />
+        </div>
+        <div>
+            <img src="https://media1.tenor.com/images/6b8d7a44197e0fd9d66c7d1cdd7fd9bb/tenor.gif" alt="Meme 5" />
+        </div>
+        <div>
+            <img src="https://media.tenor.com/images/1d74a5a9ca09e5ca9b6d83fbdba45cf7/tenor.gif" alt="Meme 6" />
+        </div>
+    </div>
+
+    <h2>Isn't this FUNNI? 😂💥💣</h2>
+    <img src="https://media.tenor.com/images/6b8d7a44197e0fd9d66c7d1cdd7fd9bb/tenor.gif" alt="Funny Meme GIF" class="funny-gif" />
+
+    <div class="footer">
+        <p>Hope you're enjoying the funni vibes! 😂💥 Don't forget to laugh as hard as possible, or else... you might miss out! 😂😂😂</p>
+    </div>
 </body>
 </html>
