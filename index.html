@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #333, #444);
+            background: linear-gradient(135deg, #3e0071, #6a1b9a);
             color: white;
             text-align: center;
             padding: 20px;
@@ -18,7 +18,7 @@
 
         h1 {
             font-size: 4rem;
-            color: #FF6347;
+            color: #E040FB;
             text-shadow: 2px 2px 5px rgba(255, 99, 71, 0.6);
             margin-bottom: 10px;
         }
@@ -39,19 +39,20 @@
         button {
             font-size: 1.5rem;
             padding: 20px 40px;
-            background-color: #FF6347;
+            background-color: #9C27B0;
             border: none;
             border-radius: 12px;
             margin: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 15px rgba(255, 99, 71, 0.5);
+            box-shadow: 0 8px 15px rgba(156, 39, 176, 0.5);
+            color: white;
         }
 
         button:hover {
-            background-color: #FF4500;
+            background-color: #8E24AA;
             transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(255, 99, 71, 0.6);
+            box-shadow: 0 15px 25px rgba(156, 39, 176, 0.6);
         }
 
         .slider {
@@ -60,18 +61,18 @@
             margin-top: 30px;
             padding: 10px;
             border-radius: 10px;
-            background-color: #555;
+            background-color: #8E24AA;
             transition: all 0.3s ease;
         }
 
         .slider:active {
-            background-color: #FF6347;
+            background-color: #9C27B0;
         }
 
         .slider-value {
             font-size: 1.5rem;
             margin-top: 10px;
-            color: #FF6347;
+            color: #FFEB3B;
         }
 
         .memes {
@@ -127,6 +128,17 @@
         .header, .content {
             margin-bottom: 40px;
         }
+
+        .dark-background {
+            background-color: #2C1B3B;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .dark-background p, .dark-background h2 {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -139,10 +151,12 @@
         <div class="content">
             <button onclick="console.log('DUDE THIS BUTTON IS SO FUNNI 😂😂😂')">Click me for FUNNI 😂</button>
             <button onclick="console.log('YOU REALLY CLICKED IT 😂😂😂')">Click me again 😂</button>
-            
-            <h2>DUDE SLIDERS ARE SO FUNNI 😂😂😂</h2>
-            <input class="slider" type="range" min="1" max="100" value="50" onchange="updateSliderValue(this)">
-            <div class="slider-value" id="sliderValue">Slider at: 50</div>
+
+            <div class="dark-background">
+                <h2>DUDE SLIDERS ARE SO FUNNI 😂😂😂</h2>
+                <input class="slider" type="range" min="1" max="100" value="50" onchange="updateSliderValue(this)">
+                <div class="slider-value" id="sliderValue">Slider at: 50</div>
+            </div>
 
             <div class="memes">
                 <div>
