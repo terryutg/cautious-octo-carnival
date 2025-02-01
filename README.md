@@ -20,7 +20,6 @@ This site contains high levels of funni. Proceed with caution, and maybe don't d
 ## 💌 Contact:
 Got a suggestion, a joke, or just want to say "funni"? Reach out, we love hearing from fellow humor enthusiasts!
 
-- **Email**: kablooey@funni.com
 - **GitHub Issues**: Feel free to open an issue if you find something that's not funni enough. 😜
 
 **Enjoy your stay at KABLOOEY💣💣💥💥💥!** Where funni never ends! 😂🔥
